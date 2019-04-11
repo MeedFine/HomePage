@@ -17,10 +17,10 @@ gulp.task("server", ["node"], function() {
   var files = ["views/**/*.html", "views/**/*.hbs", "public/**/*.*"];
 
   browserSync.init(files, {
-    proxy: "http://localhost:4444",
+    proxy: "http://localhost:3111",
     // browser: "chrome",
     notify: false,
-    port: 4445
+    port: 3112
   });
 
   gulp.watch(files).on("change", reload);
