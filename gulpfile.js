@@ -13,7 +13,6 @@ gulp.task("node", function() {
   });
 });
 
-
 gulp.task("server", ["node"], function() {
   var files = ["views/**/*.html", "views/**/*.hbs", "public/**/*.*"];
 
